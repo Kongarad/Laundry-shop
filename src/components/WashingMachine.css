@@ -1,0 +1,126 @@
+.machine-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.machine-card {
+  width: 250px;
+  border: 2px solid #f1c40f; /* กรอบสีเหลือง */
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #fffbea; /* พื้นหลังเหลืองอ่อน */
+  box-shadow: 0 4px 10px rgba(241, 196, 15, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+}
+
+.machine-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(241, 196, 15, 0.5);
+}
+
+.machine-card h3 {
+  font-size: 25px;
+  color: #b8860b; /* สีทองเข้ม */
+}
+
+.machine-card p {
+  font-size: 16px;
+  color: #7a5f00; /* น้ำตาลอมเหลือง */
+}
+
+.machine-card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #f1c40f; /* ปุ่มสีเหลือง */
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.machine-card button:hover {
+  background-color: #d4ac0d; /* ปุ่มเหลืองเข้มเมื่อ hover */
+  transform: scale(1.05);
+}
+
+.machine-card button:active {
+  background-color: #b7950b;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px #f1c40f; }
+  50% { box-shadow: 0 0 20px #f1c40f; }
+  100% { box-shadow: 0 0 10px #f1c40f; }
+}
+
+.machine-card.active {
+  animation: pulse 1.5s infinite;
+  border-color: #f1c40f;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fefefe;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+.machine-btn {
+  padding: 10px 24px;
+  background-color: #f1c40f;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.machine-btn:hover {
+  background-color: #d4ac0d;
+  transform: translateY(-2px);
+}
+
+.machine-btn:active {
+  background-color: #b7950b;
+  transform: scale(0.98);
+}
+/* สำหรับ desktop (default) */
+.machine-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .machine-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .machine-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .machine-card {
+    width: 90%;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,95 @@
+/* Navbar Container */
+.navbar {
+  width: 100vw;
+  background-color: #f1c40f;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  animation: slideFadeIn 0.6s ease-out forwards;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 26px;
+  font-weight: 700;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+/* Nav Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.navbar-links a:nth-child(1) { animation-delay: 0.3s; }
+.navbar-links a:nth-child(2) { animation-delay: 0.4s; }
+.navbar-links a:nth-child(3) { animation-delay: 0.5s; }
+/* เพิ่มอีกได้ตามจำนวน link */
+
+.navbar-links a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #000;
+  transition: width 0.3s ease;
+  margin-top: 4px;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+.navbar-links a:hover {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Main Entrance Animation */
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade Up Animation for Children */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+html {
+  scroll-behavior: smooth;
+}

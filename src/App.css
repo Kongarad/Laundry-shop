@@ -1,0 +1,48 @@
+/* App.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('/public/img/bg1.jpeg'); /* วางไฟล์ใน public/images/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  min-height: 50vh;
+}
+
+h1 {
+  text-align: center;
+  color: #fff700; /* สีเหลืองอ่อนสว่าง */
+  font-size: 48px; /* ขนาดใหญ่ขึ้น */
+  font-weight: 900; /* ตัวหนามาก */
+  margin-top: 40px;
+  margin-bottom: 32px;
+  letter-spacing: 2px; /* ขยายระยะห่างระหว่างตัวอักษร */
+}
+
+
+
+.header {
+  background-color: #fdf6c3;
+  padding: 20px;
+  border-bottom: 2px solid #f1c40f;
+  box-shadow: 0 2px 6px rgba(241, 196, 15, 0.2);
+  text-align: center;
+}
+
+/* กำหนดพื้นที่ตรงกลางสวย ๆ */
+.app-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+h1 {
+  text-align: center;
+  color: #b8860b; /* สีเหลืองอ่อนสว่าง */
+  font-size: 48px; /* ขนาดใหญ่ขึ้น */
+  font-weight: 900; /* ตัวหนามาก */
+  margin-top: 40px;
+  margin-bottom: 32px;
+  letter-spacing: 2px; /* ขยายระยะห่างระหว่างตัวอักษร */
+}
+
