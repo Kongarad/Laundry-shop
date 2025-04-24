@@ -8,10 +8,10 @@
 
 .machine-card {
   width: 250px;
-  border: 2px solid #f1c40f; /* กรอบสีเหลือง */
+  border: 2px solid #f1c40f; 
   border-radius: 12px;
   padding: 20px;
-  background-color: #fffbea; /* พื้นหลังเหลืองอ่อน */
+  background-color: #fffbea; 
   box-shadow: 0 4px 10px rgba(241, 196, 15, 0.3);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   
@@ -24,18 +24,18 @@
 
 .machine-card h3 {
   font-size: 25px;
-  color: #b8860b; /* สีทองเข้ม */
+  color: #b8860b; 
 }
 
 .machine-card p {
   font-size: 16px;
-  color: #7a5f00; /* น้ำตาลอมเหลือง */
+  color: #7a5f00; 
 }
 
 .machine-card button {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #f1c40f; /* ปุ่มสีเหลือง */
+  background-color: #f1c40f; 
   color: #333;
   border: none;
   border-radius: 10px;
@@ -46,7 +46,7 @@
 }
 
 .machine-card button:hover {
-  background-color: #d4ac0d; /* ปุ่มเหลืองเข้มเมื่อ hover */
+  background-color: #d4ac0d; 
   transform: scale(1.05);
 }
 
