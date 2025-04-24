@@ -12,12 +12,12 @@ body {
 
 h1 {
   text-align: center;
-  color: #fff700; /* สีเหลืองอ่อนสว่าง */
-  font-size: 48px; /* ขนาดใหญ่ขึ้น */
-  font-weight: 900; /* ตัวหนามาก */
+  color: #fff700; 
+  font-size: 48px; 
+  font-weight: 900; 
   margin-top: 40px;
   margin-bottom: 32px;
-  letter-spacing: 2px; /* ขยายระยะห่างระหว่างตัวอักษร */
+  letter-spacing: 2px; 
 }
 
 
@@ -30,7 +30,7 @@ h1 {
   text-align: center;
 }
 
-/* กำหนดพื้นที่ตรงกลางสวย ๆ */
+
 .app-container {
   max-width: 1024px;
   margin: 0 auto;
@@ -38,11 +38,11 @@ h1 {
 }
 h1 {
   text-align: center;
-  color: #b8860b; /* สีเหลืองอ่อนสว่าง */
-  font-size: 48px; /* ขนาดใหญ่ขึ้น */
-  font-weight: 900; /* ตัวหนามาก */
+  color: #b8860b; 
+  font-size: 48px; 
+  font-weight: 900; 
   margin-top: 40px;
   margin-bottom: 32px;
-  letter-spacing: 2px; /* ขยายระยะห่างระหว่างตัวอักษร */
+  letter-spacing: 2px; 
 }
 
